@@ -1,0 +1,67 @@
+﻿div.mainContainer {
+    background-color: lightgray;
+    width: 90%;
+}
+/*
+The position property specifies the type of positioning method used for an element.
+
+There are four different position values:
+- static
+- relative
+- fixed
+- absolute
+
+Elements are then positioned using the top, bottom, left, and right properties. 
+However, these properties will not work unless the position property is set first. 
+They also work differently depending on the position value.
+*/
+
+/* 
+   position: static; 
+   Static positioned elements are not affected by the top, bottom, left, and right properties.
+   
+   Element is positioned according to the normal flow of the page:
+*/
+div.static {
+    border: 3px solid green;
+    width: 95%;
+    height: 100px;
+}
+
+/*
+    position: fixed;
+    An element with position: relative; is positioned relative to to the viewport, 
+    which means it always stays in the same place even if the page is scrolled.
+
+    The top, right, bottom, and left properties are used to position the element.
+*/
+
+div.fixed {
+    border: 1px solid #de5a5a;
+}
+
+/*
+    position: relative;
+    An element with position: relative; is positioned relative to its normal position.
+
+    Setting the top, right, bottom, and left properties of a relatively-positioned element 
+    will cause it to be adjusted away from its normal position.
+*/
+div.relative { /* the main container */
+    border: 3px solid blue;
+    /*/*margin: auto;* margin auto based after adding 30px to the left */
+}
+
+/*
+    position: relative;
+    An element with position: absolute; is positioned relative to the nearest positioned ancestor
+    (instead of positioned relative to the viewport, like fixed).
+
+    However; if an absolute positioned element has no positioned ancestors, 
+    it uses the document body, and moves along with page scrolling.
+*/
+div.absolute {
+    width: 200px;
+    height: 100px;
+    border: 3px solid yellow;
+}

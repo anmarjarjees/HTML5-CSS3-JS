@@ -1,0 +1,115 @@
+﻿body {
+    background-color: lightgray;
+}
+
+header {
+    border-bottom: 2px solid gray;
+}
+
+div.mainContainer {
+    width: 1000px;
+    border: 1px solid black;
+    background-color: azure;
+}
+/*
+    Flex container: div#flexbox
+    The parent element in which flex items are contained. 
+    A flex container is defined using the flex or inline-flex values of the display property.
+*/
+div#flexbox {
+    width: 100%;
+    background-color: burlywood;
+    /* 
+        To implement the flexbox effect:
+    */
+    /* TO DO#1 */
+    /*
+        This will define the element as a flex container and its children as flex items.
+        The flex value makes the flex container a block-level element.
+        The inline-flex value makes the flex container an atomic inline-level element.
+    */
+    /*
+        Note: When using the vendor prefix tag for old browsers, 
+        add the prefix to the display property, not the display attribute itself. 
+        For example, display: -webkit-flex.
+    */
+    /* 
+        The "flex-direction" property is a sub-property of the Flexible Box.
+        it's defining the direction flex items are placed in the flex container.
+    */
+    /* TO DO#2 */ /* row is the defualt for flexbox, try other options */
+    /*
+        The flex-direction property accepts 4 different values:
+        row (default): same as text direction
+        row-reverse: opposite to text direction
+        column: same as row but top to bottom
+        column-reverse: same as row-reverse top to bottom
+    */
+}
+
+    /* child selector (>) */
+    /* The child selector selects all elements that are the immediate children of a specified element. */
+    div#flexbox > div {
+        text-align: center;
+    }
+        /*
+        Flex item:
+        Each child of a flex container becomes a flex item. 
+        Text directly contained in a flex container is wrapped in an anonymous flex item.
+        */
+        div#flexbox > div:nth-child(1) {
+            background-color: coral;
+        }
+
+        div#flexbox > div:nth-child(2) {
+            background-color: lightblue;
+        }
+
+        div#flexbox > div:nth-child(3) {
+            background-color: lightgreen;
+        }
+
+
+        /*
+            The flex property specifies the length of the item, 
+            relative to the rest of the flexible items inside the same container.
+
+            The flex property is a shorthand for the three properties:
+            - flex-grow (default: 0)
+            - flex-shrink (default: 1)
+            - flex-basis (default: auto)
+
+            Default value for flex:	0 1 auto
+
+            flex-grow:
+            The flex-grow CSS property specifies the flex grow factor of a flex item. 
+            It specifies what amount of space inside the flex container the item should take up.
+            A number specifying how much the item will grow relative to the rest of the flexible items.
+
+            ex: flex-grow: 0 to 10;
+
+            flex-shrink:
+            The flex-shrink CSS property specifies the flex shrink factor of a flex item.
+            A number specifying how much the item will shrink relative to the rest of the flexible items
+
+            flex-basis:
+            The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item.
+            This property determines the size of the content-box unless specified otherwise using box-sizing.
+            The length of the item. Legal values:
+            "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit
+            
+            number:	A length unit, or percentage, specifying the initial length of the flexible item(s)
+
+            auto: Default value. The length is equal to the length of the flexible item. 
+            If the item has no length specified, the length will be according to its content
+            ex: flex-basis: 100px;
+        */
+        div#flexbox > div:nth-child(1) {
+        }
+
+        div#flexbox > div:nth-child(2) {
+        }
+
+        /* Let all the flexible items be the same length, regardless of its content: */
+        div#flexbox > div:nth-child(3) {
+        }

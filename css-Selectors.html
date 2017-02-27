@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Selectors</title>
+    <meta name="keywords" content="selector selectors css" />
+
+    <link href="css/css-selectors.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="selectors">
+        <header>
+            <h1>CSS Selectors</h1>
+        </header>
+        <!--
+        The HTML <section> element represents a generic section of a document,
+        i.e., a thematic grouping of content, typically with a heading.
+
+        Usage notes:
+        Each <section> should be identified, typically by including a heading (<h1>-<h6> element) as a child of the <section> element.
+
+        If it makes sense to separately syndicate the content of a <section> element, use an <article> element instead.
+
+        Do not use the <section> element as a generic container; this is what <div> is for,
+        especially when the sectioning is only for styling purposes.
+        A rule of thumb is that a section should logically appear in the outline of a document.
+        -->
+        <section>
+            <style id="styleSection"></style>
+            <div id="grid">
+                <div id="labelCSS" class="label">Main CSS Label</div>
+                <div id="input">Enter CSS style rules here</div>
+
+                <div id="labelHTML" class="label">
+                    <h2>HTML5</h2>
+                    <p>
+                        HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard.
+                    </p>
+                    <p>
+                        It was published in October 2014 by the World Wide Web Consortium (W3C) to improve the language with support for the latest multimedia, while keeping it both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc. HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML.
+                    </p>
+                </div>
+
+                <div id="html">
+                    <div id="contentDiv">
+                        <h2>Main Content</h2>
+                        <!-- <p> element below is the first level descendant of div#contentDiv -->
+                        <p class="intro">Here is the first paragraph inside div#contentDiv and before ul element</p>
+                        <ul>
+                            <li class="first vip link">Item 1</li>
+                            <li class="vip">Item 2</li>
+                            <li class="last vip">Item 3</li>
+                        </ul>
+                        <p>Here is the second paragraph inside div#contentDiv and directly after ul element</p>
+                        <!--
+                            HTML5 Custom Data Attributes (data-*):
+                            The ability to embed custom data attributes on all HTML elements.
+
+                            Attribute Name:
+                            The data attribute name must be at least one character long and must be prefixed with 'data-'.
+                            It should not contain any uppercase letters.
+
+                            Attribute Value:
+                            The attribute value can be any string.
+
+                            data-author: is a valid HTML5 attribute:
+
+                            We can fetch and modify data- attributes using the getAttribute and setAttribute methods,
+                         -->
+                        <table id="myTable" data-author="psmith">
+                            <tr><td>Subject 1</td><td>Rule 1</td></tr>
+                            <tr><td>Subject 2</td><td>Rule 2</td></tr>
+                            <tr><td>Subject 3</td><td>Rule 3</td></tr>
+                        </table>
+                        <p>Here is the third paragraph inside div#contentDiv and directly after table element</p>
+                        <!--
+                            Class attribute can have multiple values: class="fancy bold"
+                            Multiple class names can be applied to one element:
+                        -->
+                        <div class="fancy bold" data-source="w3school">Here is div 1</div>
+                        <div class="fancy bold" data-source="MVA">Here is div 2</div>
+                        <div class="special">Here is div 3</div>
+                        <div id="quotes">
+                            <ul>
+                                <li>Nice Quote</li>
+                                <li>Great Quote</li>
+                                <li>Good Quote</li>
+                                <li>Excellent Quote</li>
+                            </ul>
+                            <!--
+                                all <p> elements below are the second level descendant of div#contentDiv
+                                but they are the first level descendant of div#quotes
+                            -->
+                            <p data-author="csmith">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam congue lacus non magna pulvinar mollis.	Donec vulputate
+                                turpis sit amet risus lacinia sollicitudin egestas lorem
+                                aliquam. Pellentesque eu felis nunc, nec pulvinar turpis.
+                                Vivamus non tempus ipsum. Ut dictum facilisis lacus, at
+                                sodales turpis rhoncus at. Cras imperdiet commodo porta. Ut
+                                ac erat sapien.
+                            </p>
+                            <!-- <p class="special"> will not work -->
+                            <p>
+                                here is a text
+                            </p>
+                            <p data-author="alexsmith">
+                                Video provides a powerful way to help you prove your point.
+                                When you click Online Video, you can paste in the embed code for the video you want to add.
+                                You can also type a keyword to search online for the video that best fits your document.
+                            </p>
+                            <p class="remember">
+                                This is a very short paragraph that has class attribute. The value of the class attribute is remember.
+                            </p>
+                            <p id="mainNotes">
+                                Reading is easier, too, in the new Reading view.
+                                You can collapse parts of the document and focus on the text you want.
+                                If you need to stop reading before you reach the end,
+                                Word remembers where you left off - even on another device.
+                            </p>
+                            <p data-author="asteve">
+                                To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other.
+                                For example, you can add a matching cover page, header, and sidebar.
+                                Click Insert and then choose the elements you want from the different galleries.
+                            </p>
+                            <p id="rest">
+                                This is a very short paragraph that has class attribute. The value of the class attribute is rest.
+                            </p>
+                            <p id="major">
+                                Reading is easier, too, in the new Reading view.
+                                You can collapse parts of the document and focus on the text you want.
+                                If you need to stop reading before you reach the end,
+                                Word remembers where you left off - even on another device.
+                            </p>
+                        </div> <!-- end div#quotes-->
+                    </div> <!-- end div#contentDiv -->
+                </div> <!-- end div#html -->
+
+                <div id="labelRender" class="label">Just a div with class label</div>
+                <div id="labelRender" class="lemon">Here is a div that have a class lemon</div>
+            </div> <!-- end div#grid-->
+        </section>
+    </div>
+</body>
+</html>

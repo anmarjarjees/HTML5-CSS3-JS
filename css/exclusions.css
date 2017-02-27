@@ -1,0 +1,61 @@
+﻿section.content > div {
+    margin-top: 50px;
+}
+
+p.msWrap {
+    /*width: 200px;
+    height: 80px;*/
+    font-weight: bold;
+    font-style: italic;
+    background-color: lightblue;
+}
+
+div#wrapFlow p.msWrap, div#wrapFlow img {
+    /*
+Property values
+One of the following values.
+auto
+For floated elements, an exclusion is created; for all other elements, an exclusion is not created.
+
+both
+Inline flow content can flow on all sides of the exclusion.
+
+start
+Inline flow content can wrap on the start edge of the exclusion area but must leave the area after the end edge of the exclusion area empty.
+
+end
+Inline flow content can wrap after the end edge of the exclusion area but must leave the area before the start edge of the exclusion area empty.
+
+maximum
+Inline flow content can wrap on the side of the exclusion with the largest available space for the given line, and must leave the other side of the exclusion empty.
+
+clear
+Inline flow content can only wrap on top and bottom of the exclusion and must leave the areas to the start and end edges of the exclusion box empty.
+*/
+    -ms-wrap-flow: start;
+}
+
+div#wrapThrough p.msWrap, div#wrapThrough img {
+    /*
+Property values
+One of the following values.
+
+wrap
+The exclusion element inherits its parent node's wrapping context. 
+Its descendant inline content wraps around exclusions defined outside the element.
+
+none
+The exclusion element does not inherit its parent node's wrapping context. 
+Its descendants are only subject to exclusion shapes defined inside the element.
+*/
+    -ms-wrap-through: wrap;
+}
+
+div#wrapMargin p.msWrap, div#wrapMargin img {
+    /*
+Property values
+length
+Value that indicates the margin. This value must be non-negative.
+*/
+    -ms-wrap-margin: 125px;
+}

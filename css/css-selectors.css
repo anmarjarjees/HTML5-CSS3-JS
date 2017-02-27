@@ -1,0 +1,210 @@
+﻿/* 
+    ========================================
+    Type Selector: 
+    ========================================
+*/
+table {
+    color: red;
+    border: 3px solid red;
+}
+
+ul {
+    color: red;
+}
+
+/* or using li the same as above */
+/*
+li {
+color: red;
+}
+*/
+
+table, ul {
+    font-family: 'Comic Sans MS';
+}
+
+h1, h2, h3 {
+    font-family: Cambria;
+}
+
+/* 
+    ========================================
+    class Selector: 
+    ========================================
+*/
+.fancy {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+/*
+    although class names starts with .
+    but there is an assumption that they have * before .
+    .bold is exactly the same like *.bold
+
+    * the universal type selector or "universal selector", all the types (elements) that have 
+    class of "bold"
+*/
+
+/*
+    we can be more specific by adding the type (element name):
+    div.bold
+*/
+
+div.special {
+    color: blue;
+    font-style: italic;
+}
+
+/* 
+    ========================================
+    id Selector: 
+    ========================================
+*/
+
+/*
+    using # sign an lorem
+*/
+#lorem {
+    color: green;
+}
+
+/*
+using:
+div {
+ color: yellow;     
+}
+    will effect all the page content because of the scope
+*/
+
+/*
+    Specificity Weight:
+    Type ==> Points
+    !Imporanat ==> 10000
+    Inline Style ==> 1000 Points
+    ID ==> 100 Points
+    Class (or pseudo class) ==> 10
+    Element = 1;
+    Universal Selectore (*) ==> 0
+*/
+
+/*
+    example of Specificity:
+
+    h1.headline {
+	font-size: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: red;
+    }
+
+    Even with placing the new value 30px of the font-size after the 20px, 
+    that <h1> element with .headline class will still be viewed in 20px 
+    because classes hold more weight than the actual elements.
+*/
+
+/* 
+    ========================================
+    attrribute Selector:
+    ========================================
+*/
+
+/* for any element that has an attribute called data-author */
+
+
+/* for any <p> element with attribute called class */
+
+
+/* for any element that has attribute data-source with the value of "w3school" */
+
+
+/* 
+   for any <li> with an attibute called class whose values is a list of space seprated words,
+   one of which is vip
+*/
+
+
+/* for any elemenat that has data-author attribute with the value ends with smith
+   like: 
+    data-author = "psmith"
+    data-author = "asmith"
+    so: data-author$ = smith
+
+    we use the "$" which means ends with smith
+*/
+
+
+/* for any elemenat that has class attribute with the value start with l */
+
+
+/* for any elemenat that has id attribute with the value that contains these two letters ma */
+
+
+/* 
+    ========================================
+    :pseudo-class and ::pseudo-element selectors Selector: 
+    ========================================
+*/
+
+/* Select the first letter for each <p> element */
+
+
+/* Select the first line for each <p> element */
+
+
+/* use the hover state */
+
+
+/*
+:nth-child()
+there is no second-child, third-child etc...
+but there is an Nth child
+
+Note: it's not a zero-based array, some selectors act as function 
+*/
+
+
+
+/*
+    Specify a background color for every <p> element that is the second p element of its parent:
+*/
+
+
+
+/* 
+    ========================================
+    Combinators Selector: 
+    ========================================
+*/
+/*
+    A combinator is something that explains the relationship between the selectors.
+
+    There are four different combinators in CSS3:
+
+    descendant selector (space)
+    child selector (>)
+    general sibling selector (~)
+    adjacent sibling selector (+)    
+*/
+
+/* descendant selector (space) */
+
+
+
+/* child selector (>) */
+/* The child selector selects all elements that are the immediate children of a specified element. */
+
+
+
+/* general sibling selector (~) */
+/* The general sibling selector selects all elements that are siblings of a specified element. */
+
+
+/* adjacent (immediate) sibling selector (+) */
+
+
+/* Practising text-shadow: */

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Exclusions</title>
+    <meta charset="utf-8" />
+    <link href="css/exclusions.css" type="text/css" rel="stylesheet" />
+</head>
+<!--
+The position property specifies the type of positioning method
+used for an element (static, relative, fixed or absolute).
+-->
+<body>
+    <div class="mainContainer">
+        <header role="banner">
+            <h1>
+                Exclusions
+            </h1>
+        </header>
+        <section class="content">
+            <h2>Exclusions</h2>
+            <p>Cascading Style Sheets (CSS) Exclusions are new in Internet Explorer 10 and Windows Store apps using JavaScript. With CSS Exclusions, web authors can now wrap text so that it completely surrounds elements, thereby avoiding the traditional limitations of floats. Instead of limiting elements to floating either to the left or right relative to their position in the document flow, CSS Exclusions can be positioned at a specified distance from the top, bottom, left, or right sides of a containing block, while remaining part of the document flow.</p>
+            <p>Support for CSS Exclusions in Internet Explorer 10 and Windows Store apps using JavaScript enables scenarios like the one illustrated in the following image, where the app shown is laid out similarly to the way in which you might design a page in a desktop publishing application like Microsoft Word or Adobe InDesign.</p>
+            <h3>Cascading Style Sheets (CSS) Exclusions</h3>
+            <dl>
+                <dt>-ms-wrap-flow</dt>
+                <dd>Gets or sets a value that specifies how exclusions impact inline content within block-level elements.</dd>
+                <dt>-ms-wrap-margin</dt>
+                <dd>Gets or sets a value that is used to offset the inner wrap shape from other shapes.</dd>
+                <dt>-ms-wrap-through</dt>
+                <dd>Gets or sets a value that specifies how content should wrap around an exclusion element.</dd>
+            </dl>
+            <div id="wrapFlow">
+                <p>
+                    Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                    Video provides a powerful way to help you prove your point. <img src="img/openclipart.png" alt="clipart icon" />When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                <p class="msWrap">I am the content of the inline span element. you can use -ms-wrap to move me any where you like.</p>
+                <p>
+                    Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                    To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+                </p>
+            </div>
+            <div id="wrapThrough">
+                <p>
+                    Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                    Video provides a powerful way to help you prove your point. <img src="img/openclipart.png" alt="clipart icon" />When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                <p class="msWrap">I am the content of the inline span element. you can use -ms-wrap to move me any where you like.</p>
+                <p>
+                    Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                    To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+                </p>
+            </div>
+            <div id="wrapMargin">
+                Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                Video provides a powerful way to help you prove your point. <img src="img/openclipart.png" alt="clipart icon" />When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                <p class="msWrap">I am the content of the inline span element. you can use -ms-wrap to move me any where you like.</p>
+                <p>
+                    Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                    To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

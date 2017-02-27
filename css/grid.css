@@ -1,0 +1,59 @@
+﻿/* Note: test with IE 11 */
+div.mainContainer {
+    width: 1000px;
+    border: 1px solid black;
+    background-color: lightyellow;
+    margin: auto;
+}
+
+/* Simple */
+div#simple {
+    background-color: azure;
+}
+
+    div#simple > div {
+        background-color: lightgreen;
+    }
+
+/*
+    #simple > div > div:nth-child(1) ==> all the direct div(s) based on the level or the layer
+    #simple > div > div ==> only the direct div based on the level or the layer and the first child
+*/
+#simple > div > div {
+    border: 1px solid gray;
+}
+
+    #simple > div > div:nth-child(2) {
+    }
+
+    #simple > div > div:nth-child(3) {
+    }
+
+    #simple > div > div:nth-child(4) {
+    }
+
+
+/* rcspans and columnspans */
+div#rcspans {
+    background-color: azure;
+}
+
+    div#rcspans > div {
+        background-color: lightblue;
+    }
+
+#rcspans > div > div { /* all the direct divs */
+    border: 1px solid gray;
+}
+
+    #rcspans > div > div:nth-child(1) {
+    }
+
+    #rcspans > div > div:nth-child(2) {
+    }
+
+    #rcspans > div > div:nth-child(3) {
+    }
+
+    #rcspans > div > div:nth-child(4) {
+    }
