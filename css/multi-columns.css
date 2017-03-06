@@ -1,0 +1,37 @@
+﻿body {
+    background-color: lightgray;
+}
+
+div.mainDiv {
+    width: 1000px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+div#multiColumns {
+    width: 1000px;
+    /* add border here */
+    background-color: lightgoldenrodyellow;
+ 
+
+    /*
+        Two CSS properties control whether and how many columns will appear: column-count and column-width.
+    */
+    /*The column-count property sets the number of columns to a particular number.*/
+    /*-moz-column-count: 4;
+    -webkit-column-count: 4;*/
+
+
+
+    /*
+    The column-width property sets the minimum desired column width.
+    If column-count is not also set, then the browser will automatically make as many columns as fit in the available width.
+    */
+
+    /*-moz-column-width: 100px;
+    -webkit-column-width: 100px;*/
+   
+
+
+
+}
